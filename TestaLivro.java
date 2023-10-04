@@ -1,9 +1,9 @@
 public class TestaLivro {
     public static void main(String[] args) {
         
-        Livro livro1 = new Livro("The Da Vinci Code", "Dan Brown", 2003, "Doubleday");
-        Livro livro2 = new Livro("Title of Book2", "Author of Book2", 2000, "Publisher2");
-        Livro livro3 = new Livro("Title of Book3", "Author of Book3", 1995, "Publisher3");
+        Livro livro1 = new Livro("Pré-Escrita - Coleção Aprenda em Casa", "Desconhecido", 2015, "Todolivro");
+        Livro livro2 = new Livro("Aprenda em Casa Caligrafia: Coordenação Motora", "Desconhecido", 2021, "Todolivro");
+        Livro livro3 = new Livro("Perigoso!","Tim Warnes", 2014, "Ciranda Cultural");
 
         System.out.println("Livro 1:\n" + livro1.toString() + "\n");
         System.out.println("Livro 2:\n" + livro2.toString() + "\n");

@@ -1,77 +1,62 @@
-class Livro {
-    private String TITULO;
-    private String AUTOR;
-    private int ANO;
-    private String EDITORA;
+public class TestaLivro {
+    public static void main(String[] args) {
+        
+        Livro livro1 = new Livro("The Da Vinci Code", "Dan Brown", 2003, "Doubleday");
+        Livro livro2 = new Livro("Title of Book2", "Author of Book2", 2000, "Publisher2");
+        Livro livro3 = new Livro("Title of Book3", "Author of Book3", 1995, "Publisher3");
 
-    public Livro(String TITULO, String AUTOR, int ANO, String EDITORA) {
-        this.TITULO = TITULO;
-        this.AUTOR = AUTOR;
-        this.ANO = ANO;
-        this.EDITORA = EDITORA;
-    }
-
-
-    public String getTITULO() {
-        return TITULO;
-    }
-
-    public String getAUTOR() {
-        return AUTOR;
-    }
-
-    public int getANO() {
-        return ANO;
-    }
-
-    public String getEDITORA() {
-        return EDITORA;
-    }
-
-
-    public void setTITULO(String TITULO) {
-        this.TITULO = TITULO;
-    }
-
-    public void setAUTOR(String AUTOR) {
-        this.AUTOR = AUTOR;
-    }
-
-    public void setANO(int ANO) {
-        this.ANO = ANO;
-    }
-
-    public void setEDITORA(String EDITORA) {
-        this.EDITORA = EDITORA;
+        System.out.println("Livro 1:\n" + livro1.toString() + "\n");
+        System.out.println("Livro 2:\n" + livro2.toString() + "\n");
+        System.out.println("Livro 3:\n" + livro3.toString() + "\n");
     }
 }
 
-public class TestaLivro {
-    public static void main(String[] args) {
-        Livro MAIS_VENDIDO1 = new Livro("Pré-Escrita - Coleção Aprenda em Casa", "Vários Autores", 2015, "TodoLivro");
-        Livro MAIS_VENDIDO2 = new Livro("Aprenda em Casa Caligrafia: Coordenação Motor", "Desconhecido", 2021, "TodoLivro");
-        Livro MAIS_VENDIDO3 = new Livro("Fisher-Price - Kit Coleção Como é Bom", "Desconhecido", 2020, "Ciranda Cultural");
+class Livro {
+    private String titulo;
+    private String autor;
+    private int ano;
+    private String editora;
 
-        String titulo1 = MAIS_VENDIDO1.getTITULO();
-        String autor1 = MAIS_VENDIDO1.getAUTOR();
-        int ano1 = MAIS_VENDIDO1.getANO();
-        String editora1 = MAIS_VENDIDO1.getEDITORA();
+    public Livro(String titulo, String autor, int ano, String editora) {
+        this.titulo = titulo;
+        this.autor = autor;
+        this.ano = ano;
+        this.editora = editora;
+    }
 
-        String titulo2 = MAIS_VENDIDO2.getTITULO();
-        String autor2 = MAIS_VENDIDO2.getAUTOR();
-        int ano2 = MAIS_VENDIDO2.getANO();
-        String editora2 = MAIS_VENDIDO2.getEDITORA();
+    public String getTitulo() {
+        return titulo;
+    }
 
-        String titulo3 = MAIS_VENDIDO3.getTITULO();
-        String autor3 = MAIS_VENDIDO3.getAUTOR();
-        int ano3 = MAIS_VENDIDO3.getANO();
-        String editora3 = MAIS_VENDIDO3.getEDITORA();
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
 
-        MAIS_VENDIDO1.setTITULO("Novo Título");
-        MAIS_VENDIDO2.setANO(2025);
+    public String getAutor() {
+        return autor;
+    }
 
-        System.out.println("Livro 1:\nTítulo:" + titulo1 + "\nAutor:" + autor1 + "\nAno:" + ano1 + "\nEditora:" + editora1);
-        System.out.println("\nLivro 2:\nTítulo:" + titulo2 + "\nAutor:" + autor2 + "\nAno:" + ano2 + "\nEditora:" + editora2);
-        System.out.println("\nLivro 3:\nTítulo:" + titulo3 + "\nAutor:" + autor3 + "\nAno:" + ano3 + "\nEditora:" + editora3);
+    public void setAutor(String autor) {
+        this.autor = autor;
+    }
+
+    public int getAno() {
+        return ano;
+    }
+
+    public void setAno(int ano) {
+        this.ano = ano;
+    }
+
+    public String getEditora() {
+        return editora;
+    }
+
+    public void setEditora(String editora) {
+        this.editora = editora;
+    }
+
+    public String toString() {
+        return "Livro: " + titulo + "\nAutor: " + autor + "\nAno: " + ano + "\nEditora: " + editora;
     }
 }

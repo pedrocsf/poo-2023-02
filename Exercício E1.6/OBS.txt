@@ -1,0 +1,1 @@
+Devido a necessidade de implementar a superclasse "figura" (pacote geo) junto da interface "desenhar" (pacote geo0) optei por fazer uso de pacotes, reservando uma pasta para cada arquivo (exceto pelo main, isto é, Programa.java) nomeada por geo (fazendo uma referência genérica à geometria) seguido de um número.

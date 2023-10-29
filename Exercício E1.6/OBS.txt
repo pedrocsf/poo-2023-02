@@ -1,1 +1,0 @@
-Tive alguns problemas na importação da classe figura e quadrado (para o caso da subclasse retângulo). Optei por corrigir fazendo usando de package.
